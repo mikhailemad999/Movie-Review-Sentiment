@@ -1,0 +1,57 @@
+sentiment_gru/
+├── src/
+│   └── sentiment/
+│       ├── __init__.py
+│       ├── config.py            # Pydantic-based typed config
+│       ├── exceptions.py        # Custom exception hierarchy
+│       ├── registry.py          # Model registry (versioning)
+│       ├── data/
+│       │   ├── __init__.py
+│       │   ├── dataset.py       # tf.data pipeline
+│       │   └── preprocessing.py # Cleaner + Tokenizer wrapper
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── base.py          # Abstract model interface
+│       │   ├── gru.py           # Bidirectional GRU + Attention
+│       │   └── factory.py       # Model factory pattern
+│       ├── training/
+│       │   ├── __init__.py
+│       │   ├── trainer.py       # Training orchestrator
+│       │   ├── callbacks.py     # Custom Keras callbacks
+│       │   └── metrics.py       # Extended metrics
+│       └── serving/
+│           ├── __init__.py
+│           ├── predictor.py     # Inference engine
+│           ├── api.py           # FastAPI REST service
+│           └── schemas.py       # Pydantic request/response models
+├── app/
+│   └── streamlit_app.py         # Production Streamlit dashboard
+├── tests/
+│   ├── conftest.py
+│   ├── unit/
+│   │   ├── test_preprocessing.py
+│   │   ├── test_model.py
+│   │   └── test_schemas.py
+│   └── integration/
+│       ├── test_trainer.py
+│       └── test_api.py
+├── scripts/
+│   ├── train.py                 # CLI entry-point (Typer)
+│   ├── evaluate.py              # Evaluation report CLI
+│   └── export_model.py          # TF-SavedModel / ONNX export
+├── configs/
+│   ├── default.yaml
+│   ├── experiment_gru_small.yaml
+│   └── experiment_gru_large.yaml
+├── docker/
+│   ├── Dockerfile.api
+│   ├── Dockerfile.app
+│   └── docker-compose.yml
+├── .github/
+│   └── workflows/
+│       ├── ci.yml               # Lint + test on every PR
+│       └── cd.yml               # Build & push Docker on main merge
+├── pyproject.toml               # PEP 517/518 build config
+├── setup.cfg                    # Tool config (mypy, flake8, pytest)
+├── Makefile                     # Dev shortcuts
+└── README.md

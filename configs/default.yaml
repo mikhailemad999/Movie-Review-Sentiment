@@ -1,0 +1,41 @@
+data:
+  vocab_size:       10000
+  max_sequence_len: 200
+  test_split:       0.2
+  val_split:        0.1
+  random_seed:      42
+
+model:
+  name:          "gru_sentiment_v1"
+  embedding_dim: 128
+  gru_units:     [128, 64]
+  attention:     true
+  dense_units:   [128, 64]
+  dropout_rate:  0.3
+  spatial_dropout: 0.2
+  l2_reg:        0.0001
+
+training:
+  batch_size:      64
+  epochs:          15
+  learning_rate:   0.001
+  lr_warmup_steps: 500
+  weight_decay:    0.01
+  label_smoothing: 0.1
+  early_stopping_patience: 4
+  reduce_lr_patience:      2
+  reduce_lr_factor:        0.5
+  min_lr:                  1.0e-7
+  mixed_precision:         false
+
+logging:
+  level:        "INFO"
+  mlflow_uri:   "file:///E:/AMIT AI/Movie Review Sentiment/mlruns"
+  experiment:   "gru-sentiment"
+  log_model:    true
+
+paths:
+  artifacts:   "artifacts/"
+  model_dir:   "artifacts/models/"
+  logs_dir:    "artifacts/logs/"
+  reports_dir: "artifacts/reports/"

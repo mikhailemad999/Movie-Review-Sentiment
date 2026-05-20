@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: sentiment-gru
+Version: 1.0.0
+Summary: Production GRU sentiment analysis — IMDB
+Author-email: Your Name <you@example.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: tensorflow>=2.14
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.1
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: pydantic>=2.4
+Requires-Dist: pydantic-settings>=2.0
+Requires-Dist: typer[all]>=0.9
+Requires-Dist: rich>=13.6
+Requires-Dist: mlflow>=2.8
+Requires-Dist: fastapi>=0.104
+Requires-Dist: uvicorn[standard]>=0.24
+Requires-Dist: httpx>=0.25
+Requires-Dist: streamlit>=1.28
+Requires-Dist: plotly>=5.18
+Requires-Dist: nltk>=3.8
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: prometheus-client>=0.18
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21; extra == "dev"
+Requires-Dist: pytest-cov>=4.1; extra == "dev"
+Requires-Dist: httpx>=0.25; extra == "dev"
+Requires-Dist: mypy>=1.6; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Requires-Dist: pre-commit>=3.5; extra == "dev"
+Requires-Dist: faker>=20.0; extra == "dev"

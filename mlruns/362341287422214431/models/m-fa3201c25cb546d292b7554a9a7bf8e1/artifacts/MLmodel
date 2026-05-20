@@ -1,0 +1,20 @@
+artifact_path: file:///E:/AMIT AI/Movie Review Sentiment/mlruns/362341287422214431/models/m-fa3201c25cb546d292b7554a9a7bf8e1/artifacts
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.13.2
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.12.6
+mlflow_version: 3.12.0
+model_id: m-fa3201c25cb546d292b7554a9a7bf8e1
+model_size_bytes: 19466395
+model_uuid: m-fa3201c25cb546d292b7554a9a7bf8e1
+prompts: null
+run_id: 64b9668c3d2448e8bcf101c1f536e4ba
+utc_time_created: '2026-05-20 23:01:15.090296'

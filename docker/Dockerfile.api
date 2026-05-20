@@ -1,0 +1,26 @@
+# syntax=docker/dockerfile:1.6
+FROM python:3.11-slim AS base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+
+FROM base AS builder
+RUN apt-get update && apt-get install -y --no-install-recommends gcc && rm -rf /var/lib/apt/lists/*
+COPY pyproject.toml .
+RUN pip install --upgrade pip && pip install ".[dev]" --target /install
+
+FROM base AS runtime
+COPY --from=builder /install /usr/local/lib/python3.11/site-packages
+COPY src/     /app/src/
+COPY scripts/ /app/scripts/
+COPY configs/ /app/configs/
+ENV PYTHONPATH=/app/src
+
+EXPOSE 8000
+HEALTHCHECK --interval=15s --timeout=5s --start-period=30s \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+CMD ["python", "-m", "sentiment.serving.api"]

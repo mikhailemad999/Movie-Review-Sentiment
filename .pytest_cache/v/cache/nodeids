@@ -1,0 +1,22 @@
+[
+  "tests/integration/test_api.py::TestHealthEndpoint::test_returns_200",
+  "tests/integration/test_api.py::TestPredictEndpoint::test_batch_over_limit_rejected",
+  "tests/integration/test_api.py::TestPredictEndpoint::test_batch_predict",
+  "tests/integration/test_api.py::TestPredictEndpoint::test_blank_text_rejected",
+  "tests/integration/test_api.py::TestPredictEndpoint::test_too_short_rejected",
+  "tests/integration/test_api.py::TestPredictEndpoint::test_valid_review",
+  "tests/unit/test_model.py::TestBahdanauAttention::test_output_shape",
+  "tests/unit/test_model.py::TestGRUSentimentModel::test_output_in_01",
+  "tests/unit/test_model.py::TestGRUSentimentModel::test_output_shape",
+  "tests/unit/test_model.py::TestGRUSentimentModel::test_registry_resolves",
+  "tests/unit/test_model.py::TestGRUSentimentModel::test_unknown_model_raises",
+  "tests/unit/test_preprocessing.py::TestCleaningFunctions::test_clean_empty",
+  "tests/unit/test_preprocessing.py::TestCleaningFunctions::test_clean_pipeline",
+  "tests/unit/test_preprocessing.py::TestCleaningFunctions::test_negation_preserved",
+  "tests/unit/test_preprocessing.py::TestCleaningFunctions::test_normalise_contraction",
+  "tests/unit/test_preprocessing.py::TestCleaningFunctions::test_remove_html",
+  "tests/unit/test_preprocessing.py::TestSentimentTokenizer::test_effective_vocab_capped",
+  "tests/unit/test_preprocessing.py::TestSentimentTokenizer::test_fit_transform_shape",
+  "tests/unit/test_preprocessing.py::TestSentimentTokenizer::test_not_fitted_raises",
+  "tests/unit/test_preprocessing.py::TestSentimentTokenizer::test_save_load_roundtrip"
+]

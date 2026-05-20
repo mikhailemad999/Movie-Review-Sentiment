@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/AMIT AI/Movie Review Sentiment/mlruns/362341287422214431/07207e4508d44ba1bb0e39c9e29bd693/artifacts
+end_time: 1779317588811
+entry_point_name: ''
+experiment_id: '362341287422214431'
+lifecycle_stage: active
+run_id: 07207e4508d44ba1bb0e39c9e29bd693
+run_name: stately-shark-774
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779317557729
+status: 4
+tags: []
+user_id: LENOVO

@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-type-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install ruff mypy pydantic-settings
+      - run: ruff check src/ scripts/ tests/
+      - run: mypy src/sentiment --ignore-missing-imports
+
+  test:
+    runs-on: ubuntu-latest
+    needs: lint-and-type-check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -e ".[dev]"
+      - run: pytest tests/ --cov=src/sentiment --cov-report=xml -q
+      - uses: codecov/codecov-action@v4
+        with: { files: coverage.xml }

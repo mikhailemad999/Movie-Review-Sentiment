@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/AMIT AI/Movie Review Sentiment/mlruns/362341287422214431/ffbd0d4ec6544b7cb17438945eba1f75/artifacts
+end_time: 1779316622550
+entry_point_name: ''
+experiment_id: '362341287422214431'
+lifecycle_stage: active
+run_id: ffbd0d4ec6544b7cb17438945eba1f75
+run_name: merciful-sow-452
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779316595666
+status: 4
+tags: []
+user_id: LENOVO

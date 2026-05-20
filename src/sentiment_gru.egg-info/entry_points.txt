@@ -1,0 +1,4 @@
+[console_scripts]
+sentiment-evaluate = scripts.evaluate:app
+sentiment-serve = sentiment.serving.api:start
+sentiment-train = scripts.train:app

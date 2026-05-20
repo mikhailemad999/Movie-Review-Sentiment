@@ -1,0 +1,8 @@
+artifact_location: file:///E:/AMIT AI/Movie Review Sentiment/mlruns/362341287422214431
+creation_time: 1779316595383
+experiment_id: '362341287422214431'
+last_update_time: 1779316595383
+lifecycle_stage: active
+name: gru-sentiment
+trace_location: null
+workspace: default

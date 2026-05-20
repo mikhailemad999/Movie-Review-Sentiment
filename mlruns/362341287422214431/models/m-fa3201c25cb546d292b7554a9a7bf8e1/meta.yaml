@@ -1,0 +1,10 @@
+artifact_location: file:///E:/AMIT AI/Movie Review Sentiment/mlruns/362341287422214431/models/m-fa3201c25cb546d292b7554a9a7bf8e1/artifacts
+creation_timestamp: 1779318074850
+experiment_id: '362341287422214431'
+last_updated_timestamp: 1779318092513
+model_id: m-fa3201c25cb546d292b7554a9a7bf8e1
+model_type: null
+name: model
+source_run_id: 64b9668c3d2448e8bcf101c1f536e4ba
+status: 2
+status_message: null

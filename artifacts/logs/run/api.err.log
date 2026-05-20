@@ -1,0 +1,36 @@
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_dir" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_path" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ('settings_',)`.
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1779318341.288893   32128 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1779318344.374515   32128 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_loaded" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+INFO:     Started server process [16684]
+INFO:     Waiting for application startup.
+I0000 00:00:1779318348.670970   32128 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\keras\src\layers\layer.py:424: UserWarning: `build()` was called on layer 'attention', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+WARNING:tensorflow:From C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\keras\src\layers\layer.py:982: UserWarning: Layer 'attention' (of type BahdanauAttention) was passed an input with a mask attached to it. However, this layer does not support masking and will therefore destroy the mask information. Downstream layers will not see the mask.
+  warnings.warn(
+C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\keras\src\layers\layer.py:982: UserWarning: Layer 'max_pool' (of type GlobalMaxPooling1D) was passed an input with a mask attached to it. However, this layer does not support masking and will therefore destroy the mask information. Downstream layers will not see the mask.
+  warnings.warn(
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+E0000 00:00:1779318383.899688   32128 util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
