@@ -10,7 +10,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      SENTIMENT_MODEL_PATH:      /artifacts/models/best_model
+      SENTIMENT_MODEL_PATH:      /artifacts/models/best_model.keras
       SENTIMENT_TOKENIZER_PATH:  /artifacts/models/tokenizer.pkl
       SENTIMENT_WORKERS:         "2"
       SENTIMENT_LOG_LEVEL:       "info"
